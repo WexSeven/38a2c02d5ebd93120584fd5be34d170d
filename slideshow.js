@@ -1,19 +1,20 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, 'game');
+showSlides(slideIndex, 'other');
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, type) {
+  showSlides(slideIndex += n, type);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, type) {
+  showSlides(slideIndex = n, type);
 }
 
-function showSlides(n) {
+function showSlides(n, type) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let slides = document.getElementsByClassName(type + "Slides");
+  let dots = document.getElementsByClassName(type + "dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {

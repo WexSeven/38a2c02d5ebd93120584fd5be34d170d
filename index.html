@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inneraian-Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="gameart-slideshow.css" rel="stylesheet" type="text/css" />
-  <link href="otherart-slideshow.css" rel="stylesheet" type="text/css" />
+  <link href="slideshow.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -22,74 +21,74 @@
 
   <!-- Slideshow Game Art-->
   <div class="slideshow-container">
-    <div class="mySlides fade">
+    <div class="gameSlides fade">
       <div class="numbertext">1 / 3</div>
       <img
         src="https://github.com/WexSeven/38a2c02d5ebd93120584fd5be34d170d/blob/main/GameArt/de57f423a606659f29e54e05eaae828f.jpg?raw=true"
         style="width:100%">
       <div class="text">Picture 1</div>
     </div>
-    <div class="mySlides fade">
+    <div class="gameSlides fade">
       <div class="numbertext">2 / 3</div>
       <img src="https://github.com/WexSeven/38a2c02d5ebd93120584fd5be34d170d/blob/main/GameArt/e076572af6.jpg?raw=true"
         style="width:100%">
       <div class="text">Picture 2</div>
     </div>
-    <div class="mySlides fade">
+    <div class="gameSlides fade">
       <div class="numbertext">3 / 3</div>
       <img
         src="https://github.com/WexSeven/38a2c02d5ebd93120584fd5be34d170d/blob/main/GameArt/thumb-1920-830180.png?raw=true"
         style="width:100%">
       <div class="text">Picture 3</div>
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1, 'game')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'game')">&#10095;</a>
   </div>
   <br>
   <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="gamedot" onclick="currentSlide(1, 'game')"></span>
+    <span class="gamedot" onclick="currentSlide(2, 'game')"></span>
+    <span class="gamedot" onclick="currentSlide(3, 'game')"></span>
   </div>
-  <script src="gameart-slideshow.js"></script>
   <!-- Slideshow Game Art-->
 
   <div class="default-header">Other Art</div>
 
   <!-- Slideshow Other Art-->
   <div class="slideshow-container">
-    <div class="myOtherSlides fade">
+    <div class="otherSlides fade">
       <div class="numbertext">1 / 3</div>
       <img
         src="https://github.com/WexSeven/38a2c02d5ebd93120584fd5be34d170d/blob/main/OtherArt/FWalH_0XwAEEs7M.jpg?raw=true"
         style="width:100%">
       <div class="text">Picture 1</div>
     </div>
-    <div class="myOtherSlides fade">
+    <div class="otherSlides fade">
       <div class="numbertext">2 / 3</div>
       <img
         src="https://github.com/WexSeven/38a2c02d5ebd93120584fd5be34d170d/blob/main/OtherArt/FWalIBDWQAEmBln.jpg?raw=true"
         style="width:100%">
       <div class="text">Picture 2</div>
     </div>
-    <div class="myOtherSlides fade">
+    <div class="otherSlides fade">
       <div class="numbertext">3 / 3</div>
       <img
         src="https://github.com/WexSeven/38a2c02d5ebd93120584fd5be34d170d/blob/main/OtherArt/valiachen2021-111111.jpg?raw=true"
         style="width:100%">
       <div class="text">Picture 3</div>
     </div>
-    <a class="prev" onclick="plusOtherSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusOtherSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1, 'other')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'other')">&#10095;</a>
   </div>
   <br>
   <div style="text-align:center">
-    <span class="dotOther" onclick="currentOtherSlide(1)"></span>
-    <span class="dotOther" onclick="currentOtherSlide(2)"></span>
-    <span class="dotOther" onclick="currentOtherSlide(3)"></span>
+    <span class="otherdot" onclick="currentSlide(1, 'other')"></span>
+    <span class="otherdot" onclick="currentSlide(2, 'other')"></span>
+    <span class="otherdot" onclick="currentSlide(3, 'other')"></span>
   </div>
-  <script src="otherart-slideshow.js"></script>
   <!-- Slideshow Game Art-->
+
+  <script src="slideshow.js"></script>
 
   <div class="default-header">Напишіть мені: [адреса електронної пошти]</div>
 
